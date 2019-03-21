@@ -34,6 +34,12 @@ class ViewController: UIViewController {
         count = count + 1
         myLabel.text = " 메로오오옹 "
         counterLabel.text = String(count)
+        if (count==10) {
+            count = 0
+            
+        }
+        
+        
     }
     
     @IBAction func buttonBpressed(_ sender: Any) {
