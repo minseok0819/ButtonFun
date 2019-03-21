@@ -7,14 +7,43 @@
 //
 
 import UIKit
-
+ var count = 0
 class ViewController: UIViewController {
 
+    
+    
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    @IBOutlet weak var myLabelB: UILabel!
+    
+    @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //myLabel.text = "하이루"
+        counterLabel.text = String(count)
+        
+    
+        
     }
 
 
-}
+    @IBAction func buttonpressed(_ sender: Any) {
+        count = count + 1
+        myLabel.text = " 메로오오옹 "
+        counterLabel.text = String(count)
+    }
+    
+    @IBAction func buttonBpressed(_ sender: Any) {
+        myLabelB.text = " 우와아ㅏㅏㅏㅏ "
+    }
+    
+    
+    }
+    
+    
+
+
 
